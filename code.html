@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minta Maaf - Dari Nazura Ganteng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6; /* Latar belakang merah muda romantis */
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        h1 {
+            color: #d63384; /* Warna pink gelap */
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        #message {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            white-space: pre-line; /* Untuk baris baru */
+        }
+        button {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #b02a6a;
+        }
+        #animated-text {
+            font-size: 1.8em;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Minta Maaf Ya Sayang 😘</h1>
+    <div id="message">
+        Maafkan aku ya, kalau aku pernah bikin kamu kesal atau sedih.<br>
+        Aku sayang banget sama kamu, dan aku janji akan lebih baik lagi.<br>
+        Kamu adalah segalanya buat aku. 💖
+    </div>
+    <button onclick="animateApology()">Klik untuk Animasi Maaf</button>
+    <div id="animated-text"></div>
+
+    <script>
+        function animateApology() {
+            const text = "Dari Nazura Ganteng, aku minta maaf dari lubuk hati yang paling dalam. Aku cinta kamu selamanya! ❤️";
+            const element = document.getElementById('animated-text');
+            element.textContent = ''; // Reset teks
+            let i = 0;
+            const interval = setInterval(() => {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 100); // Delay 100ms per karakter (sesuaikan untuk kecepatan)
+        }
+    </script>
+</body>
+</html>
